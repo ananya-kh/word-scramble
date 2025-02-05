@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Scramble</title>
+    <link rel="stylesheet" href="wordscr.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <h2 class="game-title">WORD SCRAMBLE</h2>
+        <div id="game-container">
+            <p id="word"></p>
+            <p id="hint"></p>
+            <div class="timescore">
+                <p id="timer"></p>
+                <p id="score">Score:0</p>
+            </div>
+            <input type="text" id="player-word" autocomplete="off" placeholder="Enter a valid word">
+            <div class="buttons">
+            <button class="game-btn"  id="new-btn">New Word</button>
+            <button class="game-btn" id="check-btn">Check Word</button>
+            </div>
+            <div id="message"></div>
+        </div>
+        <button id="restart-btn" style="display: none;">Restart Game</button>
+        <div id="end-screen">
+            <!-- Game over content will dynamically be added here -->
+        </div>
+        
+    </div>
+    <script src="wordscr.js"></script>
+</body>
+
+</html>

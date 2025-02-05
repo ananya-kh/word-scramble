@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: rgb(181, 181, 227);
+    font-family:cursive;
+}
+
+.main-container {
+    background-color: white;
+    min-height: 60vh;
+    width: 40vw;
+    margin: 20vh 30vw;
+    line-height: 3rem;
+}
+
+.game-title{
+    font-weight: 800;
+    text-align: center;
+    border-bottom: 0.1px solid rgb(222, 219, 219);
+    padding-left: 1rem;
+    color: brown;
+    background-color: rgb(247, 241, 235);
+}
+
+#game-container {
+    margin: 1rem;
+    letter-spacing: .05rem;
+}
+
+#word {
+    height: 5%;
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+#hint {
+    color: rgb(72, 72, 72);
+}
+
+.timescore {
+    display: flex;
+    justify-content: space-between;
+}
+
+#player-word{
+    width: 100%;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    font-family:cursive;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+.game-btn {
+    height: 2rem;
+    color: white;
+    border: 1px none;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-top: 1rem;
+    font-family:cursive;
+    cursor: pointer;
+}
+#new-btn {
+    background-color: rgb(66, 122, 66);
+}
+
+#check-btn {
+    background-color: rgb(122, 122, 231);
+}
+#message {
+    font-size: 1.5rem;
+    text-align: center;
+    color: green;
+}
+#end-screen{
+    display: none; 
+    text-align: center; 
+    margin-top: 50px;
+    font-size: 1.5rem;
+}
+#restart-btn {
+    padding: 0.5rem 1rem;
+    background-color: rgb(242, 155, 123);
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#restart-btn:hover {
+    background-color: orangered;
+    color: white;
+}
