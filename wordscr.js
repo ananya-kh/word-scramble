@@ -69,7 +69,7 @@ countDown();//start initial count down
 
 // New Word Button
 document.getElementById("new-btn").addEventListener("click", () => {
-    document.getElementById("message").innerText = "";
+    document.getElementById("message").innerHTML = "<br>";
     document.getElementById("player-word").value = "";
     document.getElementById("player-word").disabled = false;
     displayNextWord();
@@ -96,7 +96,7 @@ function checkWord() {
     } 
     if ((correctWord) === playerWord) {
         const messageElement = document.getElementById("message");
-        messageElement.style.color = "blue";
+        messageElement.style.color = "#2E7D32";
         messageElement.innerText = "You are right!!";
         CurrentScore = CurrentScore + 1;
         score.innerText = `Score:${CurrentScore}`;
@@ -140,7 +140,7 @@ document.addEventListener("click", function (event) {
         CurrentScore = 0;
         score.innerText = `Score: ${CurrentScore}`;
         document.getElementById("player-word").value = "";
-        document.getElementById("message").innerText = "";
+        document.getElementById("message").innerHTML = "<br>";
 
         // Show game elements
         document.getElementById("game-container").style.display = "block";

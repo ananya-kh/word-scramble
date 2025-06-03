@@ -3,25 +3,32 @@
 }
 
 body {
-    background-color: rgb(181, 181, 227);
-    font-family:cursive;
+    background-color: #F4F4F9;
+    font-family:Mukta;
+    overflow-y: hidden;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    height: 100vh;           
 }
 
 .main-container {
     background-color: white;
-    min-height: 60vh;
+    /* max-height: 65vh; */
     width: 40vw;
-    margin: 20vh 30vw;
-    line-height: 3rem;
+    line-height: 3.5rem;
+    border-radius: 2%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);  
+    overflow: hidden;
 }
 
 .game-title{
     font-weight: 800;
     text-align: center;
-    border-bottom: 0.1px solid rgb(222, 219, 219);
     padding-left: 1rem;
-    color: brown;
-    background-color: rgb(247, 241, 235);
+    color: #3F51B5;
+    background-color:#e7e7f3;
 }
 
 #game-container {
@@ -32,12 +39,14 @@ body {
 #word {
     height: 5%;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-transform: uppercase;
 }
 
 #hint {
-    color: rgb(72, 72, 72);
+    color:#565555;
+    text-align: center;
+    font-size: .9rem;
 }
 
 .timescore {
@@ -48,8 +57,9 @@ body {
 #player-word{
     width: 100%;
     height: 2.5rem;
-    font-size: 1.5rem;
-    font-family:cursive;
+    font-size: 1rem;
+    font-family:Mukta;
+    text-align: center;
 }
 .buttons{
     display: flex;
@@ -62,26 +72,26 @@ body {
     border-radius: 4px;
     font-size: 1rem;
     margin-top: 1rem;
-    font-family:cursive;
+    font-family:Mukta;
     cursor: pointer;
-}
-#new-btn {
-    background-color: rgb(66, 122, 66);
+    background-color: #3F51B5;
 }
 
-#check-btn {
-    background-color: rgb(122, 122, 231);
+ #new-btn:hover,#check-btn:hover{
+    background-color:#303F9F;
+    transform: scale(1.05);
 }
 #message {
     font-size: 1.5rem;
     text-align: center;
-    color: green;
+    padding: 1rem;
 }
 #end-screen{
     display: none; 
     text-align: center; 
     margin-top: 50px;
     font-size: 1.5rem;
+    padding-bottom: 2rem;
 }
 #restart-btn {
     padding: 0.5rem 1rem;
@@ -90,8 +100,9 @@ body {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-family:Mukta;
 }
 #restart-btn:hover {
-    background-color: orangered;
+    background-color: rgb(248, 100, 46);
     color: white;
 }
